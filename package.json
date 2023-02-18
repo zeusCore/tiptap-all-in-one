@@ -1,39 +1,48 @@
 {
   "name": "tiptap-all-in-one",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "main": "./dist/tiptap-all-in-one.es.js",
+  "types": "./types/src/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tiptap/core": "^2.0.0-beta.217",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.20.13",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "prettier": "^2.8.4",
+    "stylelint": "^15.0.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-order": "^6.0.2",
     "typescript": "^4.9.3",
-    "vite": "^4.1.0"
-  },
-  "description": "An editor similar to notion, which includes all the necessary extensions and supports collaborative editing.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/zeusCore/tiptap-all-in-one.git"
-  },
-  "keywords": [
-    "tiptap",
-    "collaborative",
-    "editor"
-  ],
-  "author": "stevenjc.chen",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zeusCore/tiptap-all-in-one/issues"
-  },
-  "homepage": "https://github.com/zeusCore/tiptap-all-in-one#readme"
+    "vite": "^4.1.0",
+    "vite-plugin-eslint": "^1.8.1"
+  }
 }

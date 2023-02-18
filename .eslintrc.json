@@ -1,0 +1,41 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "plugins": ["react-hooks"],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "extends": ["eslint:recommended", "plugin:prettier/recommended"]
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+      ],
+      "rules": {
+        "react/react-in-jsx-scope": "off",
+        "linebreak-style": [0, "error", "unix"],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": [
+          "warn",
+          {
+            "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
+          }
+        ]
+      }
+    }
+  ]
+}
