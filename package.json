@@ -1,0 +1,39 @@
+{
+  "name": "tiptap-all-in-one",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "description": "An editor similar to notion, which includes all the necessary extensions and supports collaborative editing.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zeusCore/tiptap-all-in-one.git"
+  },
+  "keywords": [
+    "tiptap",
+    "collaborative",
+    "editor"
+  ],
+  "author": "stevenjc.chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeusCore/tiptap-all-in-one/issues"
+  },
+  "homepage": "https://github.com/zeusCore/tiptap-all-in-one#readme"
+}
