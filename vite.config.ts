@@ -17,4 +17,7 @@ export default defineConfig({
       external: ['react', 'react-dom'],
     },
   },
+  server: {
+    port: 5177,
+  },
 })
